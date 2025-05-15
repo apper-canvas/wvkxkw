@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 59 130 246;
+    --color-primary-dark: 37 99 235;
+    --color-secondary: 124 58 237;
+    --color-accent: 245 158 11;
+    --color-surface-50: 249 250 251;
+    --color-surface-100: 243 244 246;
+    --color-surface-200: 229 231 235;
+    --color-surface-300: 209 213 219;
+    --color-surface-400: 156 163 175;
+    --color-surface-500: 107 114 128;
+    --color-surface-600: 75 85 99;
+    --color-surface-700: 55 65 81;
+    --color-surface-800: 31 41 55;
+    --color-surface-900: 17 24 39;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.loading-spinner {
+  @apply animate-spin h-6 w-6 text-primary;
+}
+
+.card {
+  @apply bg-white dark:bg-surface-800 rounded-lg shadow-md p-4;
+}
